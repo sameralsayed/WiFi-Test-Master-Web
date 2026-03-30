@@ -1,0 +1,54 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+:root {
+    --primary: #00ff88;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand span {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -1px;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #0a0a0a, #1a2a1f);
+}
+
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 30px -10px rgb(0 255 136 / 0.3) !important;
+}
+
+.signal-bars .bar {
+    width: 12px;
+    background: #00ff88;
+    animation: signalPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes signalPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+#networks-list .list-group-item {
+    background: #111;
+    border-color: #222;
+    transition: all 0.2s;
+}
+
+#networks-list .list-group-item:hover {
+    background: #1a2a1f;
+    transform: translateX(4px);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #00ff88, #00cc66);
+}
